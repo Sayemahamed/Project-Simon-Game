@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+
+body {
+    background-color: #2C3333;
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+    font-family: 'Yatra One', cursive;
+    color: #F6F1F1;
+}
+.btn{
+    width: 500px;
+    margin: 0 auto;
+}
+.bt{
+    width: 125px;
+    height: 125px;
+    border-radius: 25px;
+    border: 5px solid;
+    border-color: black;
+    margin: 5px 5px;
+}
+
+.btn1{
+    background-color: red;
+    color: transparent;
+}
+.btn1:hover, .pressed1{
+    box-shadow: 0 0 30px red;
+}
+.btn2{
+    background-color: blue;
+    color: transparent;
+}
+.btn2:hover, .pressed2{
+    box-shadow: 0 0 30px blue;
+}
+.btn3{
+    background-color: green;
+    color: transparent;
+}
+.btn3:hover, .pressed3{
+    box-shadow: 0 0 30px green;
+}
+.btn4{
+    background-color: yellow;
+    color: transparent;
+}
+.btn4:hover, .pressed4{
+    box-shadow: 0 0 30px yellow;
+}
+
+.btn5{
+    background-color: cyan;
+    color: transparent;
+}
+.btn5:hover, .pressed5{
+    box-shadow: 0 0 30px cyan;
+}
+.btn6{
+    background-color: orange;
+    color: transparent;
+}
+.btn6:hover, .pressed6{
+    box-shadow: 0 0 30px orange;
+}
+.btn7{
+    background-color: brown;
+    color: transparent;
+}
+.btn7:hover, .pressed7{
+    box-shadow: 0 0 30px brown;
+}
+.btn8{
+    background-color: teal;
+    color: transparent;
+}
+.btn8:hover, .pressed8{
+    box-shadow: 0 0 30px teal;
+}
+
+.btn9{
+    background-color: wheat;
+    color: transparent;
+}
+.btn9:hover, .pressed9{
+    box-shadow: 0 0 30px wheat;
+}
+.pressed{
+    background-color: #2C3333;
+    color: transparent;
+}

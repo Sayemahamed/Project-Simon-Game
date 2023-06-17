@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+body {
+    background-color: #2C3333;
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+    margin-top: 60px;
+    font-family: 'Yatra One', cursive;
+    color: #F6F1F1;
+}
+
+.grid{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    column-gap: 50px;
+    width: 600px;
+    height: 400px;
+}
+
+.grd{
+    width: 150px;
+    height: 60px;
+    margin-top: 100px;
+    border-radius: 20px;
+    border: 0px;
+    font-size: 20px;
+}
+
+
+.grid-2X2 {
+    background: #fa0032;
+    background-image: -webkit-linear-gradient(top, #fa0032, #5c0101);
+    background-image: -moz-linear-gradient(top, #fa0032, #5c0101);
+    background-image: -ms-linear-gradient(top, #fa0032, #5c0101);
+    background-image: -o-linear-gradient(top, #fa0032, #5c0101);
+    background-image: linear-gradient(to bottom, #fa0032, #5c0101);
+    -webkit-border-radius: 13;
+    -moz-border-radius: 13;
+    border-radius: 13px;
+    text-shadow: 0px 1px 3px #666666;
+    font-family: Courier New;
+    color: #ffffff;
+    font-size: 32px;
+    padding: 4px 19px 8px 17px;
+    border: dotted #e80c3c 2px;
+    text-decoration: none;
+  }
+  
+.grid-2X2:hover {
+    background: #870421;
+    background-image: -webkit-linear-gradient(top, #870421, #fa0032);
+    background-image: -moz-linear-gradient(top, #870421, #fa0032);
+    background-image: -ms-linear-gradient(top, #870421, #fa0032);
+    background-image: -o-linear-gradient(top, #870421, #fa0032);
+    background-image: linear-gradient(to bottom, #870421, #fa0032);
+    text-decoration: none;
+}
+
+.grid-3X3{
+  background: #5792ff;
+  background-image: -webkit-linear-gradient(top, #5792ff, #000357);
+  background-image: -moz-linear-gradient(top, #5792ff, #000357);
+  background-image: -ms-linear-gradient(top, #5792ff, #000357);
+  background-image: -o-linear-gradient(top, #5792ff, #000357);
+  background-image: linear-gradient(to bottom, #5792ff, #000357);
+  -webkit-border-radius: 13;
+  -moz-border-radius: 13;
+  border-radius: 13px;
+  text-shadow: 0px 1px 3px #666666;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 32px;
+  padding: 4px 19px 8px 17px;
+  border: dotted #002896 2px;
+  text-decoration: none;
+}
+
+.grid-3X3:hover{
+  background: #000357;
+  background-image: -webkit-linear-gradient(top, #000357, #5792ff);
+  background-image: -moz-linear-gradient(top, #000357, #5792ff);
+  background-image: -ms-linear-gradient(top, #000357, #5792ff);
+  background-image: -o-linear-gradient(top, #000357, #5792ff);
+  background-image: linear-gradient(to bottom, #000357, #5792ff);
+  text-decoration: none;
+}
+.grid-4X4{
+  background: #08eb00;
+  background-image: -webkit-linear-gradient(top, #08eb00, #090f07);
+  background-image: -moz-linear-gradient(top, #08eb00, #090f07);
+  background-image: -ms-linear-gradient(top, #08eb00, #090f07);
+  background-image: -o-linear-gradient(top, #08eb00, #090f07);
+  background-image: linear-gradient(to bottom, #08eb00, #090f07);
+  -webkit-border-radius: 13;
+  -moz-border-radius: 13;
+  border-radius: 13px;
+  text-shadow: 0px 1px 3px #666666;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 32px;
+  padding: 4px 19px 8px 17px;
+  border: dotted #002896 2px;
+  text-decoration: none;
+}
+
+.grid-4X4:hover{
+  background: #090f07;
+  background-image: -webkit-linear-gradient(top, #090f07, #08eb00);
+  background-image: -moz-linear-gradient(top, #090f07, #08eb00);
+  background-image: -ms-linear-gradient(top, #090f07, #08eb00);
+  background-image: -o-linear-gradient(top, #090f07, #08eb00);
+  background-image: linear-gradient(to bottom, #090f07, #08eb00);
+  text-decoration: none;
+}
