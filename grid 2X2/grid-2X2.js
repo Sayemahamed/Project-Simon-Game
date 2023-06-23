@@ -125,7 +125,11 @@ let updateScore = () => {
   document.getElementById("score").innerHTML = score;
 };
 document.querySelector("#playerName").addEventListener("keypress", (e) => {
-  if (e.key == "Enter"){
-    data.push({})
+  if (e.key == "Enter") {
+    data.push({
+      name: document.querySelector("#playerName").ariaValueMax,
+      score: score,
+    });
+    localStorage.setItem("data", JSON.stringify(data));
   }
 });
