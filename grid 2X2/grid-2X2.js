@@ -55,6 +55,7 @@ var storeTheSequence = new Queue();
 document.addEventListener("keypress", function (event) {
   lvl = 0;
   levelup(event.key, toStart);
+  document.querySelector(".score").style.display = "block";
   return;
 });
 
@@ -71,7 +72,10 @@ async function levelup(key, start) {
     await delay(lvl * 1000 + 500);
     userClick(); ////This function handles the buttons clicked by the user
   } else {
-    document.querySelector("h1").innerHTML = "Game Over, Refresh to Restart";
+    document.querySelector("#gameOver").style.display = "flex";
+    document.querySelector("#gameOver").style.pointerEvents = "visible";
+    document.querySelector("#playerName").style.display = "block";
+    document.querySelector("#playerName").style.pointerEvents = "all";
   }
 }
 
@@ -120,3 +124,8 @@ async function byClick() {
 let updateScore = () => {
   document.getElementById("score").innerHTML = score;
 };
+document.querySelector("#playerName").addEventListener("keypress", (e) => {
+  if (e.key == "Enter"){
+    data.push({})
+  }
+});

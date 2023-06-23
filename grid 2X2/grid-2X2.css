@@ -6,6 +6,7 @@ body {
 }
 
 .score {
+  display: none;
   position: absolute;
   font-family: "Yatra One", cursive;
   color: #f6f1f1;
@@ -13,10 +14,51 @@ body {
   right: 20px;
   top: 20px;
 }
-.score div{
-    position:absolute;
-    right: 20px;
+.score div {
+  position: absolute;
+  right: 20px;
 }
+#gameOver {
+  background-color: red;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: 430px;
+  border-radius: 20px;
+  border: #f6f1f1 2px solid;
+  font-family: "Yatra One", cursive;
+  color: #f6f1f1;
+  font-size: 40px;
+  pointer-events: none;
+  display: none;
+}
+#gameOver p {
+  margin: auto;
+}
+
+#playerName {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70px;
+  width: 260px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-family: "Yatra One", cursive;
+  color: #f6f1f1;
+  background-color: wheat;
+  font-size: 40px;
+  text-align: center;
+  display: none;
+  pointer-events: none;
+}
+
 h1 {
   font-size: 50px;
   font-family: "Yatra One", cursive;
