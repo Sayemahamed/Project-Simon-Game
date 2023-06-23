@@ -4,7 +4,7 @@ async function delay(time) {
     setTimeout(resolve, time);
   });
 }
-
+let score = 0;
 /*Queue implemntattion*/
 class Queue {
   constructor() {
@@ -105,6 +105,8 @@ async function byClick() {
   clickedButton.classList.remove("pressed");
   if (storeTheSequence.Front() == buttonNum) {
     storeTheSequence.dequeue();
+    score++;
+    updateScore();
     if (storeTheSequence.size() == 0) {
       levelup("Enter", 1);
     }
@@ -115,3 +117,6 @@ async function byClick() {
     levelup("a");
   }
 }
+let updateScore = () => {
+  document.getElementById("score").innerHTML = score;
+};
