@@ -71,7 +71,10 @@ async function levelup(key, start) {
     await delay(lvl * 1000 + 500);
     userClick(); ////This function handles the buttons clicked by the user
   } else {
-    document.querySelector("h1").innerHTML = "Game Over, Refresh to Restart";
+    document.querySelector("#gameOver").style.display = "flex";
+    document.querySelector("#gameOver").style.pointerEvents = "visible";
+    document.querySelector("#playerName").style.display = "block";
+    document.querySelector("#playerName").style.pointerEvents = "all";
   }
 }
 
