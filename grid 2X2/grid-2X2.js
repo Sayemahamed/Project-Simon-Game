@@ -130,11 +130,8 @@ document.querySelector("#playerName").addEventListener("keypress", (e) => {
       name: document.querySelector("#playerName").value,
       score: score,
     });
-    data.sort(a, b, () => {
-      return a.score > b.score;
-    });
+    data.sort((a, b) => b.score - a.score);
     localStorage.setItem("data", JSON.stringify(data));
-    window.location.href =
-      "https://hasan8162.github.io/Project-Simon-Game/grid%202X2/leaderBoard.html";
+    window.location.href = "./leaderBoard.html";
   }
 });
