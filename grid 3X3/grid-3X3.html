@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
+  <head>
+    <title>Simon Game for 3 X 3 grid</title>
+    <link rel="stylesheet" href="grid-3X3.css" />
+  </head>
 
-        <title>Simon Game for 3 X 3 grid</title>
-        <link rel = "stylesheet" href = "grid-3X3.css">
-
-    </head>
-
-    <body>
-        
-        <h1 class = "start">Press 'Enter' key to start the game</h1>
-
-        <div class = "btn">
-            <button class = "bt btn1">1</button>
-            <button  class = "bt btn2">2</button>
-            <button  class = "bt btn3">3</button>
-            <button  class = "bt btn4">4</button>
-            <button class = "bt btn5">5</button>
-            <button  class = "bt btn6">6</button>
-            <button  class = "bt btn7">7</button>
-            <button  class = "bt btn8">8</button>
-            <button class = "bt btn9">9</button>
-        </div>
-
-         <script src = "grid-3X3.js" charset = "utf-8"></script>
-    </body>
+  <body>
+    <h1 class="start">Press 'Enter' key to start the game</h1>
+    <div class="score">
+      Score
+      <div id="score">0</div>
+    </div>
+    <div id="gameOver"><p>Game Over</p></div>
+    <input type="text" id="playerName" placeholder="Enter Name" />
+    <div class="btn">
+      <button class="bt btn1">1</button>
+      <button class="bt btn2">2</button>
+      <button class="bt btn3">3</button>
+      <button class="bt btn4">4</button>
+      <button class="bt btn5">5</button>
+      <button class="bt btn6">6</button>
+      <button class="bt btn7">7</button>
+      <button class="bt btn8">8</button>
+      <button class="bt btn9">9</button>
+    </div>
+    <script src="data.js"></script>
+    <script src="grid-3X3.js" charset="utf-8"></script>
+  </body>
 </html>
