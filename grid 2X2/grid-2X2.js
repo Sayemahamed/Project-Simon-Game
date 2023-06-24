@@ -131,6 +131,6 @@ document.querySelector("#playerName").addEventListener("keypress", (e) => {
       score: score,
     });
     localStorage.setItem("data", JSON.stringify(data));
-    // window.location.href
+    window.location.href = "./leaderboard.html";
   }
 });
