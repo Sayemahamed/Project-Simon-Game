@@ -4,7 +4,7 @@ async function delay(time) {
     setTimeout(resolve, time);
   });
 }
-
+let score = 0;
 /*Queue implemntattion*/
 class Queue {
   constructor() {
@@ -108,6 +108,8 @@ async function byClick() {
   clickedButton.classList.remove("pressed");
   if (storeTheSequence.Front() == buttonNum) {
     storeTheSequence.dequeue();
+    score++;
+    updateScore();
     if (storeTheSequence.size() == 0) {
       levelup("Enter", 1);
     }
@@ -118,3 +120,18 @@ async function byClick() {
     levelup("a");
   }
 }
+
+let updateScore = () => {
+  document.getElementById("score").innerHTML = score;
+};
+document.querySelector("#playerName").addEventListener("keypress", (e) => {
+  if (e.key == "Enter") {
+    data.push({
+      name: document.querySelector("#playerName").value,
+      score: score,
+    });
+    data.sort((a, b) => b.score - a.score);
+    localStorage.setItem("data", JSON.stringify(data));
+    window.location.href = "./leaderBoard.html";
+  }
+});
