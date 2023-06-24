@@ -55,6 +55,7 @@ var storeTheSequence = new Queue();
 document.addEventListener("keypress", function (event) {
   lvl = 0;
   levelup(event.key, toStart);
+  document.querySelector(".score").style.display = "block";
   return;
 });
 
@@ -131,7 +132,7 @@ document.querySelector("#playerName").addEventListener("keypress", (e) => {
       score: score,
     });
     data.sort((a, b) => b.score - a.score);
-    localStorage.setItem("data", JSON.stringify(data));
+    localStorage.setItem("data1", JSON.stringify(data));
     window.location.href = "./leaderBoard.html";
   }
 });
